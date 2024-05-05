@@ -3,7 +3,7 @@
 # About the Project
 Our goal is to scrape a watch brand’s website to get a set of data points about every watch. 
 
-![image](https://github.com/ssq-94/Web-Scraping/assets/78969075/25ec0299-f525-4c68-be38-c6f35ac4a221)
+![image](https://github.com/ssq-94/Web-Scraping/assets/78969075/0db07d86-f334-43d6-af2c-c6d83546e241)
 
 
 We have 3 major tasks broken into different stages:
@@ -23,8 +23,10 @@ We have 3 major tasks broken into different stages:
 
 ## Step 1: Installations
 To start scraping, you'll need to install the items below.
-- `selenium`- python library
-- `webdriver`- for Google Chrome browser
+- `selenium`- Python library
+- `webdriver`-  Google Chrome browser
+- `BeautifulSoup`- Extracting data from web pages.
+- `requests`- Used for making HTTP requests to retrieve web pages or resources.
   
 #### More Info
 
@@ -52,3 +54,14 @@ To start scraping, you'll need to install the items below.
 7. It waits for 5 seconds again to allow the page to load more items.
 8. The code calculates the new height of the page and compares it with the previous height to check if more items were loaded. If the heights are the same, it means there are no more items to load, and the loop breaks.
 9. The process continues until all items on the page have been loaded.
+
+## Step 3: Extracting Watch Data and Creating DataFrame
+
+
+# Step 4: Data Analysis and Visualization
+In this Step, the selected columns are analyzed and visualized using various charts.
+
+- The first chart is a bar chart showing the distribution of dial colors.
+- The second chart is a pie chart showing the distribution of water resistance.
+- The third chart is a bar chart showing the distribution of case shapes.
+- The fourth chart is a bar chart showing the distribution of movement by brand.
