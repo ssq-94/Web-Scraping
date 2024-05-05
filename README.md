@@ -42,7 +42,7 @@ Before starting the scraping process, you'll need to install the following depen
 
 In this step, extract the relevant watch data from the website and create a DataFrame to store the information.
 
-# Step 4: Data Analysis and Visualization
+## Step 4: Data Analysis and Visualization
 
 Perform data analysis and visualization on the selected columns using various charts. The charts include:
 - Bar chart showing the distribution of dial colors.
