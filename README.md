@@ -40,3 +40,15 @@ To start scraping, you'll need to install the items below.
 - `pandas:` Widely used for data manipulation and analysis, with DataFrames for working with tabular data.
 - `pd.set_option('display.max_columns', None):` Sets an option in pandas to display all columns when printing DataFrames.
 - `re:` Provides support for regular expressions, used for pattern matching and text manipulation.
+
+## Step 2: Install WebDriver
+
+1. The `chromedriver_path` variable specifies the path to the ChromeDriver executable on your device.
+2. The options variable is used to set options for Chrome, such as running it in headless mode.
+3. The `webdriver.Chrome()` creates a Chrome WebDriver instance using the ChromeDriver executable.
+4. The `driver.get()` method opens the target website
+5. The `time.sleep(5)` waits for 5 seconds to allow the page to load.
+6. The code then scrolls down the page using `driver.execute_script("window.scrollTo(0, document.body.scrollHeight) ;")`.
+7. It waits for 5 seconds again to allow the page to load more items.
+8. The code calculates the new height of the page and compares it with the previous height to check if more items were loaded. If the heights are the same, it means there are no more items to load, and the loop breaks.
+9. The process continues until all items on the page have been loaded.
